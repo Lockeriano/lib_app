@@ -1,6 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Books</h1>
+<h1>Listing Books</h1><br>
+
+<% @books.each do |book| %>
+
+
+  <h1><%= link_to book.title, book %></h1>
+  <p><%= book.species %></p>
+  <hr>
+
+
 
 <table>
   <thead>
@@ -10,7 +19,7 @@
   </thead>
 
   <tbody>
-    <% @books.each do |book| %>
+
       <tr>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
