@@ -1,6 +1,9 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
+  def new
+    @book = Book.new
+  end
   # GET /books
   # GET /books.json
   def index
@@ -12,10 +15,6 @@ class BooksController < ApplicationController
   def show
   end
 
-  # GET /books/new
-  def new
-    @book = Book.new
-  end
 
   # GET /books/1/edit
   def edit
