@@ -23,7 +23,12 @@
 
   <p>
     <%= f.label :author %>
-    <%= f.text_field :species %>
+    <%= f.text_field :author %>
+  </p>
+
+  <p>
+    <%= f.label :category_id, "Categories" %><br />
+    <%= f.collection_select :category_id, Category.order(:name), :id, :name, prompt: '--select--' %>
   </p>
 
   <div class="actions">

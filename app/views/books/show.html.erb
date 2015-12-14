@@ -2,6 +2,7 @@
 
 <h1>Title: <%= @book.title %></h1>
 <p>Species: <%= @book.species %></p>
+<p>category: <%= @book.category.name %></p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
