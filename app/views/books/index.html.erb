@@ -4,15 +4,15 @@
 
 <% @books.each do |book| %>
 
-  <h1><%= link_to book.title, book %></h1>
-  <p><%= book.species %></p>
+<h1><%= link_to book.title, book %></h1>
+<p><%= book.species %></p>
 
 <%= link_to 'Show', book %>
 <%= link_to 'Edit', edit_book_path(book) %>
 <%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %>
 
 <hr>
-    <% end %>
+<% end %>
 
 <br>
 
