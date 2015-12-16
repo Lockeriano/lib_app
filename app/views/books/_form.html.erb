@@ -28,7 +28,7 @@
 
   <p>
     <%= f.label :category_id, "Categories" %><br />
-    <%= f.collection_select :category_id, Category.order(:name), :id, :name, prompt: '--select--' %>
+    <%= f.collection_select :category_id, Category.for_select, :id, :name, prompt: '--select--' %>
   </p>
 
   <div class="actions">
