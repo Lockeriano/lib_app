@@ -1,9 +1,9 @@
 require 'faker'
 
 FactoryGirl.define do
-  factory :book do |f|
-    f.title { Faker::Name.title }
-    f.species { "fantasy" }
-    f.author { "Frank" }
+  factory :book do
+    title { Faker::Name.title }
+    species { "fantasy" }
+    author { "Frank" }
   end
 end
