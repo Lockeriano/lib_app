@@ -1,0 +1,7 @@
+<% provide(:title, @user.name) %>
+
+  User's name: <b><%= @user.name %></b><br>
+  User's email: <b><%= @user.email %></b><br>
+  Created <%= time_ago_in_words(@user.created_at) %> Ago <br>
+
+You don't have your own account yet? <%= link_to 'Sign up', new_user_path %>!

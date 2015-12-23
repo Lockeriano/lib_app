@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :user
+  resources :users
   resources :books
   resources :categories
   # The priority is based upon order of creation: first created -> highest priority.
@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   get 'about' => 'static_pages#about'
   get 'help' => 'static_pages#help'
   get 'home' => 'static_pages#home'
-  get 'user/name'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
