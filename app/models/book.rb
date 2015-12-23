@@ -1,5 +1,7 @@
 class Book < ActiveRecord::Base
+  has_many :user_rate
   belongs_to :category
+
   validates :title, presence: true
   validates :species, presence: true
   validates :author, presence: true

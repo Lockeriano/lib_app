@@ -46,6 +46,12 @@ ActiveRecord::Schema.define(version: 20151222210239) do
   add_index "session_controllers", ["email"], name: "index_session_controllers_on_email", unique: true
   add_index "session_controllers", ["reset_password_token"], name: "index_session_controllers_on_reset_password_token", unique: true
 
+  create_table "user_rates", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "book_id"
+    t.integer "rate"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
