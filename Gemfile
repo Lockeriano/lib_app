@@ -54,3 +54,4 @@ group :test, :development do
   gem 'spring'
 end
 
+gem 'rubocop', require: false

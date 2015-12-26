@@ -1,0 +1,10 @@
+AllCops:
+  Include:
+    - "**/Rakefile"
+    - "**/config.ru"
+  Exclude:
+    - db/schema.rb
+    - "**/vendor/**/*"
+
+Documentation:
+  Enabled: false
