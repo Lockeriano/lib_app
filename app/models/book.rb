@@ -7,7 +7,5 @@ class Book < ActiveRecord::Base
   validates :author, presence: true
   validates :category_id, presence: true
 
-  def category_name
-    self.category.name
-  end
+  delegate :name, to: :category, prefix: true
 end

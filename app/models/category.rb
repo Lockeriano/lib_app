@@ -3,6 +3,6 @@ class Category < ActiveRecord::Base
   validates :name, presence: true, length: { minimum: 4 }
 
   def self.for_select
-    self.order(:name)
+    order(:name)
   end
 end
