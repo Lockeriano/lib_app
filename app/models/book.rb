@@ -8,6 +8,6 @@ class Book < ActiveRecord::Base
   validates :category_id, presence: true
 
   def category_name
-    self.category.name
+    category.name
   end
 end

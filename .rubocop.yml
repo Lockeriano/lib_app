@@ -1,3 +1,5 @@
+inherit_from: .rubocop_todo.yml
+
 AllCops:
   Include:
     - "**/Rakefile"
@@ -5,6 +7,10 @@ AllCops:
   Exclude:
     - db/schema.rb
     - "**/vendor/**/*"
+    - test/**/*
+    - bin/setup
 
 Documentation:
   Enabled: false
+
+
